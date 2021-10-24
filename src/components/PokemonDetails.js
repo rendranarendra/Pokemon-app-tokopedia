@@ -32,7 +32,7 @@ import { handleChangeColour } from "../utils/handleType";
 function PokemonDetails(props) {
   const datas = props ? props.pokemon : null;
   const count = props.count;
-  const isSuccessful = true;
+  const isSuccessful = Math.random() < 0.5 ? true : false;
 
   const [pokemonData, setPokemonData] = useState(
     datas?.pokemon ? datas?.pokemon : null
